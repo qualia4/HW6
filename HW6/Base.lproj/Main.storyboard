@@ -727,5 +727,40 @@
             </objects>
             <point key="canvasLocation" x="-435" y="594"/>
         </scene>
+        <!--Task3 Controller-->
+        <scene sceneID="Bxd-OV-RWh">
+            <objects>
+                <viewController storyboardIdentifier="Task3Controller" id="bQx-t3-Fer" customClass="Task3Controller" customModule="HW6" sceneMemberID="viewController">
+                    <view key="view" id="zZW-n6-Az2">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView identifier="imageView1" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tP1-MN-Zlf">
+                                <rect key="frame" x="13" y="75" width="121" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" identifier="imageView1" imageScaling="proportionallyDown" id="AK1-Cf-5z8"/>
+                            </imageView>
+                            <imageView identifier="imageView2" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ca9-kA-qj6">
+                                <rect key="frame" x="302" y="75" width="128" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Pw4-3J-yGX"/>
+                            </imageView>
+                            <imageView identifier="imageView3" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="667-24-sdG">
+                                <rect key="frame" x="163" y="74" width="125" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="SF3-fh-0gl"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="imageView1" destination="tP1-MN-Zlf" id="FFs-tz-zdB"/>
+                        <outlet property="imageView2" destination="ca9-kA-qj6" id="cfR-Oy-fDd"/>
+                        <outlet property="imageView3" destination="667-24-sdG" id="Xne-Vf-rO3"/>
+                    </connections>
+                </viewController>
+                <customObject id="5id-e0-NdH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-491" y="186"/>
+        </scene>
     </scenes>
 </document>

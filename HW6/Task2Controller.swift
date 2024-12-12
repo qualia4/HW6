@@ -13,13 +13,14 @@ class Task2Controller: NSViewController {
         super.viewDidLoad()
 
         print("\nTask 2: Shared Resource Race")
-        // Demonstrate Unsafe Bank Account Race Condition
+        // Demonstrating Unsafe Bank Account Race Condition
         print("\nUnsafe Bank Account Demonstration:")
         self.demonstrateBankAccount(accountType: .unsafe) {
-            // After unsafe demonstration, demonstrate thread-safe account
+            // After unsafe demonstration, demonstrating thread-safe account
             print("\nThread-Safe Bank Account Demonstration:")
             self.demonstrateBankAccount(accountType: .safe) {
                 print("All demonstrations complete.")
+                self.transitionToTask3Controller()
             }
         }
     }
@@ -63,5 +64,17 @@ class Task2Controller: NSViewController {
             print("\(accountType == .unsafe ? "Unsafe" : "Safe") Account Final Balance: $\(account.getBalance())")
             completion()
         }
+    }
+
+    private func transitionToTask3Controller() {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        guard let task3Controller = storyboard.instantiateController(
+            withIdentifier: "Task3Controller"
+        ) as? Task3Controller else {
+            print("Failed to instantiate Task3Controller")
+            return
+        }
+
+        self.presentAsModalWindow(task3Controller)
     }
 }
