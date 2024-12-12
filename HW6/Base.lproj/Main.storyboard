@@ -714,5 +714,18 @@
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
+        <!--Task2 Controller-->
+        <scene sceneID="4fM-np-mB6">
+            <objects>
+                <viewController storyboardIdentifier="Task2Controller" id="NL3-Ud-oDT" customClass="Task2Controller" customModule="HW6" sceneMemberID="viewController">
+                    <view key="view" id="sFf-nC-gga">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="aqx-ip-eee" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-435" y="594"/>
+        </scene>
     </scenes>
 </document>
